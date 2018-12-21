@@ -1,12 +1,12 @@
 <h2>Eat As Much As You Can!!!</h2>
 
 {{#each burgers}}
-<form class="change-form">
+<form>
 <li>
     <p><span for="ca" class="label">Name:</span> {{this.burger_name}}</p>
-    <p><span id="ca" class="label">Devoured:</span> {{this.devoured}}</p>
+    <p><span id="ca" class="label change-form">Devoured:</span> {{this.devoured}}</p>
 </li>
-<button type="submit">Devour!</button>
+<button class="change-form" type="submit">Devour!</button>
 </form>
 {{/each}}
 

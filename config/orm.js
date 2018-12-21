@@ -48,10 +48,10 @@ var orm = {
 		queryString += ") ";
 		queryString += "VALUES (";
 		queryString += printQuestionMarks(vals.length);
-		queryString += ") ";
+		queryString += "); "
 
 		// console.log(queryString);
-        console.log(vals);
+        console.log(queryString);
 		// Perform the database query
 		connection.query(queryString, vals, function(err, result) {
 			if (err) {
